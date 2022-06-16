@@ -17,7 +17,7 @@ services:
       - ./.env
   web:
     build: 
-        context: ../api_yamdb/
+        context: ./../api_yamdb
         args:
           token_env: 12345
     restart: always
