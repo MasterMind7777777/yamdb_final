@@ -1,7 +1,5 @@
 from django.db import models
-
 from users.models import User
-
 from reviews.validators import validete_year
 
 
