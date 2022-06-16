@@ -1,5 +1,5 @@
-from django.core.exceptions import ValidationError
 from api_yamdb.settings import DENY_LIST
+from django.core.exceptions import ValidationError
 
 
 def validate_username(value):
