@@ -35,7 +35,7 @@ jobs:
         # перейти в папку, содержащую manage.py — 
         #<корневая_папка_infra_actions>/<папка_проекта>/manage.py
         cd api_yamdb/
-    -name: Pytest
+    - name: Pytest
       run: |
         # запустить написанные разработчиком тесты
         pytest
