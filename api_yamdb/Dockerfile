@@ -21,4 +21,4 @@ COPY . /app
 # Выполнить запуск сервера разработки при старте контейнера.
 CMD ["gunicorn", "api_yamdb.wsgi:application", "--bind", "0:8000" ] 
 
-ENV token $token_env
+ENV token $TOKEN_ENV
