@@ -16,10 +16,9 @@ services:
     env_file:
       - ./.env
   web:
-    build: 
-        context: ../api_yamdb
-        args:
-          token_env: 12345
+    image: mastermind777nest/nest:latest
+    args:
+      token_env: 12345
     restart: always
     volumes:
       # Контейнер web будет работать с данными, хранящиеся в томе static_value, 
