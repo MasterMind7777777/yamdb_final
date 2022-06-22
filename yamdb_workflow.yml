@@ -76,12 +76,8 @@ jobs:
             username: ${{ secrets.USER }}
             key: ${{ secrets.SSH_KEY }}
             script: |
-              # Выполняет pull образа с DockerHub
-              sudo docker pull mastermind777nest/nest
               #остановка всех контейнеров
               sudo docker stop $(sudo docker ps -a -q)
-              sudo docker run --rm -d -p 5000:5000 mastermind777nest/nest
-              sudo docker-compose stop
               sudo docker-compose rm web
               touch .env
               echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
